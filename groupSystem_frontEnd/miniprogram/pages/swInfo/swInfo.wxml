@@ -1,0 +1,13 @@
+<view class="photo">
+  <image src="../../images/1.jpg"></image>
+</view>
+<view class="contant">
+  <view class="descrip">
+  <text class="title">Title\n</text>
+  <text class="detail">The Institute for Sustainable Materials and Environment is a joint initiative between the Departments of Civil Engineering, Chemistry, Environmental Science and Industrial Design at Xian Jiaotong-Liverpool University.
+
+The evolution of urbanisation, economic intensification as well as the all-embracing needs to develop infrastructure and production of agricultural outputs to accommodate burgeoning population growth in China has resulted in a significant amount of industrial and agricultural waste each year and where the methods of disposal by means of uncontrolled landfill and burning have caused a serious environmental impact. Effectively utilising solid wastes for the development of new building materials through the concept of multidisciplinary research is no doubt a significant step toward low carbon and sustainable construction.</text>
+</view>
+</view>
+
+

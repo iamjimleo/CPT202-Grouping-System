@@ -1,0 +1,11 @@
+<!--pages/select/select.wxml-->
+<view class='com-selectBox'>
+    <view class='com-sContent' bindtap='selectToggle'>
+        <view class='com-sTxt'>{{nowText}}</view>
+        <image src='https://img2.baidu.com/it/u=1570324735,3685538297&fm=26&fmt=auto&gp=0.jpg'  class='com-sImg'  animation="{{animationData}}"></image>
+    </view>
+    <view class='com-sList' wx:if="{{selectShow}}">
+        <view wx:for="{{propArray}}" data-index="{{index}}" wx:key='' class='com-sItem' bindtap='setText'>{{item.text}}</view>
+    </view>
+</view>
+

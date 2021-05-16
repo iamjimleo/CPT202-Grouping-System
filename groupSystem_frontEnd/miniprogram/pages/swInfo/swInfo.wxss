@@ -1,0 +1,24 @@
+.photo{
+  margin: 20rpx;
+}
+.photo image{
+  height: 400rpx;
+  width: 700rpx;
+  border-radius: 15rpx;
+}
+.contant{
+  
+}
+.descrip{
+  margin-inline-start: 30rpx;
+  margin-inline-end: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  line-height: 50rpx;
+  /* background-color: white;
+  border-radius: 15rpx; */
+}
+.descrip .title{
+  font-size: 60rpx;
+
+}

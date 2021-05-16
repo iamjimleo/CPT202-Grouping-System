@@ -1,0 +1,58 @@
+<!--pages/shenqing/shenqing.wxml-->
+<view class="applys">
+  
+  <view  class = "blockk"wx:for="{{Applydata}}" wx:for-item="item">
+   <view class = "applyState"></view>
+
+   
+  <view class = "list1">
+    <view class = "list1left">
+    <image src="{{item.teamimage}}"></image>
+    </view>
+    
+    <view class = "list1right">
+    <view class = "teamname">{{item.teamname}}</view>
+    <!-- <view class = "applytime">{{item.applyTime}}</view> -->
+    <view class="statee">
+     <text>{{item.applystate}}</text>
+   </view>
+   
+    </view>
+
+  </view>
+
+  <view class="list23">
+  <view class = "list2">
+    <view class="men">
+      <view class = "greenmen"wx:for="{{item.nowww}}">
+        <image src="../../images/mengreen.png"></image>
+      </view>
+      <view class = "blackmen"wx:for="{{item.allll}}">
+        <image src="../../images/menblack.png"></image>
+      </view>
+    
+    </view>
+
+    <view class = "Candidate">
+  <text>Candidates : {{item.CandidateNow}}/{{item.CANdidateAll}}</text>
+  </view>
+
+    
+
+  </view>
+
+  <view class="list3">
+  
+    
+  
+    <navigator class="icon" url='/pages/teamInfo/teamInfo?team_id={{item.team_id}}'>
+      <image src="../../images/moreinfo.png"></image>
+    </navigator>
+
+
+
+</view>
+</view>
+</view>
+
+</view>
