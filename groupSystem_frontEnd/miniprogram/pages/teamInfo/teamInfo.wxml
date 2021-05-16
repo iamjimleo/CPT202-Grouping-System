@@ -1,0 +1,55 @@
+<!--pages/teamInfo/teamInfo.wxml-->
+<view class="basicInfo">
+  <image src="{{team_photo}}" mode="aspectFill"></image>
+  <view class="detail" >
+    <text class="name">{{teamName}}\n</text>
+    <text class="leader">Leader: {{leader_name}}\n</text>
+    <text class="tag">Skill: {{skill}}\n</text>
+    <text class="tag">Program: {{program}}</text>
+  </view>
+</view>
+
+<view class="descrip">
+  <view class="description">
+    <text class="title">Description: \n</text>
+    <text class="content">{{scope}}</text>
+  </view>
+  
+</view>
+
+<scroll-view class="member" scroll-x>
+  <view class="Member">   
+    <navigator class="m1" url="/pages/memberInfoView/memberInfoView?user_id={{item.user_id}}&state={{state}}&team_id={{team_id}}&isHost={{item.isHost}}" wx:for="{{exist_position}}">
+      <image src="{{item.photo_url}}" mode="aspectFill"></image>
+      <text class="position"> CV</text>
+    </navigator>      
+    <view class="m1" wx:for="{{rest_position}}">
+      <image></image>
+      <text class="position"> {{item}}</text>
+    </view>
+
+  </view>
+</scroll-view>
+
+<view wx:if="{{state==0}}" >
+  <view class="hint">
+    <text>You are the leader of this team !\n</text>
+  </view>
+  <navigator url="/pages/editTeam/editTeam?team_id={{team_id}}&team_photo={{team_photo}}"  class="dropTeam" hover-class="none">
+    <button type="primary" plain="true">Edit team</button>
+  </navigator>
+  <view wx:if="{{!exist_position.length}}" class="dropTeam">
+    <button type="warn" plain="true" bindtap="dropTeam">Delete team</button>
+  </view>
+</view>
+<view wx:if="{{state==1}}" class="hint">
+  <text>You are applying for this team !</text>
+</view>
+<view wx:if="{{state==2}}" class="hint">
+  <text>You already have a team !</text>
+</view>
+<view wx:if="{{state==3||state==4}}" class="apply" hover-class="none">
+  <button type="primary" class="button" bindtap="apply">Apply</button>
+</view>
+
+

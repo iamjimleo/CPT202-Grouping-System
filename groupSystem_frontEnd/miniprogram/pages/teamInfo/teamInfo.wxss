@@ -1,0 +1,103 @@
+/* pages/teamInfo/teamInfo.wxss */
+.basicInfo{
+  background-color: white;
+  /* border-radius: 20rpx;  */
+  /* margin: 50rpx; */
+  display: flex;
+}
+.basicInfo image{
+  height: 300rpx;
+  width: 250rpx;
+  border-radius: 15rpx;
+  margin: 30rpx;
+}
+.basicInfo .detail{
+  margin-top: 30rpx;
+  line-height: 60rpx;
+}
+.detail .name{
+  font-size: 60rpx;
+}
+.leader{
+  margin-top: 100rpx;
+}
+.tag{
+  margin-top: 50rpx;
+  font-size: 30rpx;
+}
+.tag text{
+  line-height: 30rpx;
+}
+.descrip{
+  margin-top: 20rpx;
+  background-color: white;
+  line-height: 50rpx;
+  /* border-radius: 20rpx;  */
+}
+.description{
+  margin-inline-start: 30rpx;
+  margin-inline-end: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.descrip .title{
+}
+.descrip .content{
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #ddd;
+  line-height: 20rpx;
+  word-break: break-all;
+}
+.member{
+  background-color: white;
+  height: 300rpx;
+  width: 750rpx;
+  /* border: 1px solid rgb(0, 0, 0); */
+  border-radius: 15rpx; 
+  margin-top: 30rpx;
+  display: flex;
+  flex-wrap: nowrap;    
+}
+.Member{
+  padding-top: 10rpx;
+  display: flex;
+}
+.m1{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.m1 image{
+  height: 200rpx;
+  width: 150rpx;
+  /* border: 1px solid rgb(0, 0, 0); */
+  border-radius: 15rpx;
+  margin-left:22rpx;
+}
+.position{
+  width: 200rpx;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15rpx;
+}
+.m1 text{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* 换行 */
+  word-break: break-all; 
+}
+.apply .button{
+  margin-top: 50rpx;
+  /* position: absolute; */
+  /* right: 250rpx;  */
+  /* bottom: 0rpx; */
+}
+.hint{
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 40rpx;
+}
+.dropTeam{
+  margin-top: 20rpx;
+}
