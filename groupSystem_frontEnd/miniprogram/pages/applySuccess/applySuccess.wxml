@@ -1,0 +1,11 @@
+<!--pages/applySuccess/applySuccess.wxml-->
+<view class="content1">
+  <image src="../../images/applySuccess.jpg" mode= "aspectFit"></image>
+</view>
+<view class="content2">
+  <text class="applySuccess">Successfully\n</text>
+  <text class="applySuccess"> Applied !</text>
+  <button class="continue.foot_mini_btn"type="primary" plain="true" 
+    open-type="switchTab" bindtap="navigateToHome">Continue</button>
+</view>
+

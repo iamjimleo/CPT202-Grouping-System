@@ -1,0 +1,28 @@
+/* pages/applySuccess/applySuccess.wxss */
+page{
+  background-color: white;
+}
+.content1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+.content2{
+  margin-top: 60rpx;
+}
+.applySuccess{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  color: #f99e99;
+}
+
+.continue.foot_mini_btn {
+  margin-top: 200rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  border-color: black;
+  color: black;
+}

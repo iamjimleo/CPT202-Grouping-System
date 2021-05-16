@@ -1,0 +1,72 @@
+.basicInfo{
+  background-color: white;
+  /* border-radius: 20rpx;*/
+  /* margin: 50rpx; */
+  display: flex;
+}
+.basicInfo image{
+  height: 300rpx;
+  width: 250rpx;
+  border-radius: 15rpx;
+  margin: 30rpx;
+}
+.basicInfo .detail{
+  margin-top: 30rpx;
+}
+.detail{
+  line-height: 50rpx;
+}
+.detail .phone{
+  line-height: 35rpx;
+}
+.detail .name{
+  font-size: 30rpx;
+}
+.detail .TeamName{
+  font-size: 30rpx;
+}
+.detail .leaderName{
+  font-size: 30rpx;
+}
+.detail .skill{
+  font-size: 30rpx;
+}
+.detail .program{
+  font-size: 30rpx;
+}
+.detail .position{
+  font-size: 30rpx;
+}
+
+
+
+.descrip{
+  margin-top: 20rpx;
+  background-color: white;
+  line-height: 50rpx;
+  /* border-radius: 20rpx;  */
+}
+.description{
+  margin-inline-start: 30rpx;
+  margin-inline-end: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.descrip .content{
+  border-bottom: 2rpx solid #ddd;
+  line-height: 20rpx;
+  word-break: break-all;
+}
+
+.description .title{
+  border-bottom: 2rpx solid #ddd;
+}
+.buttons{
+  margin-top: 50rpx;
+  display: flex;
+}
+.buttons .reject{
+  margin-left: 150rpx;
+  margin-right: 150rpx;
+}

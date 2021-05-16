@@ -1,0 +1,163 @@
+<view class="creatTeamRoot">
+
+<view class="team-logo">
+  <view class="logo">
+    <image src="{{team_photo}}" mode="aspectFit" bindtap="changeIcon"></image>
+    <text>Team-Logo</text>
+  </view>
+</view>
+
+<view class="list1">
+<view class="team-name">
+  <view class="teamname">
+    <text>Team Name</text>
+          <input type="text" maxlength="20" placeholder="enter name of team" value="{{teamname}}"bindinput="namechange"/>
+    </view>
+  </view>
+
+<view class="nember-of-member">
+  <text>Number</text>
+    <!-- <picker mode="selector" range="{{number1}}" bindchange="nemberchange">
+      <view>={{choice1}}</view>
+    </picker> -->
+  <Select prop-array='{{selectArray}}' bind:myget='getData' ></Select>
+</view>
+
+</view>
+  <view class = "program">
+    <text>Program</text>
+    <picker mode="selector" range="{{programName}}" bindchange="programchange">
+      <view> is about: {{programchoose}}</view>
+    </picker>
+</view>
+
+<view class="team-scope">
+  <view class="title2">
+    <text>Program Scope</text>
+  </view>
+  <textarea  placeholder="enter your scope here" value="{{programScope}}"bindinput="scopechange"></textarea>
+</view>
+
+<view class="totalmember">
+  <view class = "membertitle">
+    <text>Team member</text>
+  </view>
+  <view class="team-member">  
+    <view wx:if="{{mb1}}" class="memberx" bindtap="cm" data-mbid='1'>
+      <view class="pic">
+        <image src ="{{pic1}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name1}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos1}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb2}}" class="memberx" bindtap="cm" data-mbid='2'>
+      <view class="pic">
+        <image src ="{{pic2}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name2}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos2}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb3}}" class="memberx" bindtap="cm" data-mbid='3'>
+      <view class="pic">
+        <image src ="{{pic3}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name3}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos3}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb4}}" class="memberx" bindtap="cm" data-mbid='4'>
+      <view class="pic">
+        <image src ="{{pic4}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name4}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos4}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb5}}" class="memberx" bindtap="cm" data-mbid='5'>
+      <view class="pic">
+        <image src ="{{pic5}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name5}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos5}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb6}}" class="memberx" bindtap="cm" data-mbid='6'>
+      <view class="pic">
+        <image src ="{{pic6}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name6}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos6}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb7}}" class="memberx" bindtap="cm" data-mbid='7'>
+      <view class="pic">
+        <image src ="{{pic7}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name7}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos7}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb8}}" class="memberx" bindtap="cm" data-mbid='8'>
+      <view class="pic">
+        <image src ="{{pic8}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name8}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos8}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{mb9}}" class="memberx" bindtap="cm" data-mbid='9'>
+      <view class="pic">
+        <image src ="{{pic9}}"></image>
+      </view>
+      <view class="name">
+        <text>{{name9}}</text>
+      </view>
+      <view class="pos">
+        <text>{{pos9}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>
+</view>
+
+
+
+
+<view class="post">
+<image src="/images/post1.png"bindtap="postall"></image>
+</view>

@@ -1,0 +1,42 @@
+<block wx:if="{{team.length}}" >
+  <view class="cells" wx:for="{{team}}">
+    <view class="userIcon">
+      <image src="{{item.photo_url}}" mode="aspectFill" ></image>
+    </view>    
+    <view class="detail" >
+      <view class="name">
+        <text>Name: {{item.name}}\n</text> 
+      </view>
+    </view>
+    <view class="status">
+      <view class="tiaojian1" wx:if="{{item.state==1}}"> 
+        <text>Pending</text>
+      </view>
+      <view class="tiaojian2" wx:if="{{item.state==2}}">
+        <text>Accepted</text>
+      </view>
+      <view class="tiaojian3" wx:if="{{item.state==3}}">
+        <text>Rejected</text>        
+      </view>
+           
+      <navigator class="icon" url="/pages/applyDetail/applyDetail?user_id={{item.user_id}}&team_id={{item.team_id}}&host_id={{host_id}}&state={{item.state}}" bindtap="click" id="{{item.user_id}}">
+        <button size="mini" plain="true">More Info</button>
+      </navigator>
+    </view> 
+  </view>
+</block>
+
+<view class = "block_des">
+  <view class="title">
+    <text>Comment:\n</text>
+  </view>
+  <view class="content">
+    <text>{{comment}}</text>
+  </view>
+</view>
+    
+
+
+
+
+

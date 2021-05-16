@@ -1,0 +1,126 @@
+Page{
+  background-color: #f0f0f0;
+}
+.logo{
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo image{
+  width: 300rpx;
+  height:360rpx;
+  /* border:5rpx solid#000; */
+}
+.list1{
+  margin-bottom: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.teamname{
+  width: 400rpx;
+  margin-inline-start: 30rpx;
+}
+.teamname text{
+  margin-left:25rpx ;
+}
+.teamname input{
+  border-bottom:2rpx solid#ddd;
+  margin-left: 25rpx;
+  height: 60rpx;
+}
+.nember-of-member{
+  margin-right: 45rpx;
+  /* border-bottom:2rpx solid#ddd; */
+}
+/* .nember-of-member picker{
+  border:4rpx solid#000;
+  height: 50rpx;
+  width: 100rpx;
+} */
+.program{
+  margin-top: 10rpx;
+  padding-left: 50rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: #fff;
+}
+.program picker{
+  border-bottom:2rpx solid#ddd;
+  width: 650rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.team-scope{
+  background-color: #fff;
+  padding-bottom: 20rpx;
+  
+}
+.team-scope textarea{
+  width: 650rpx;
+  border:2rpx solid#000;
+  margin-left: 50rpx;
+}
+.title2{
+  margin-bottom: 20rpx;
+  margin-left: 50rpx;
+}
+.totalmember{
+  margin-top: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: #fff;
+}
+.membertitle text{
+  margin-inline-start: 50rpx;
+  font-size:45rpx;
+  font-weight: 700;
+}
+.team-member{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding:30rpx; */
+  margin-top: 20rpx;
+}
+.memberx{
+  width: 140rpx;
+  margin-bottom: 20rpx;
+  margin-left: 35rpx;
+}
+.pic{
+  width: 130rpx;
+  height: 170rpx;
+  margin: 0 auto;
+  display: block;
+  border:4rpx solid#000;
+}
+.pic image{
+  width: 100%;
+  height: 100%;
+}
+.name{
+  font-size: 30rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.pos{
+  font-size: 20rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.post image{
+  width: 220rpx;
+  height: 108rpx;
+  margin-left: 265rpx;
+  margin-top:50rpx;
+  margin-bottom: 50rpx;
+}

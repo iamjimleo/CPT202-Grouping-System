@@ -1,0 +1,22 @@
+<block wx:if="{{team.length}}" >
+    <radio-group class="cells">
+      <label class="team" wx:for="{{team}}" wx:for-index='key' wx:for-item='item'>
+        <radio  bindtap="click" id="{{item.number}}">
+
+        
+          <view class="button">
+            <view>
+              <image src="../../images/1.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="detail" >
+              <text class="leaderName">Position: {{item.position_id}}\n</text>
+              <text class="tag">Skill: {{item.skill_id}}\n</text>
+            </view>   
+          </view>
+        </radio>
+      </label>
+    </radio-group>
+</block>
+<view class="confirm" bindtap="conf">
+  <button plain="true">Confirm</button>
+</view>

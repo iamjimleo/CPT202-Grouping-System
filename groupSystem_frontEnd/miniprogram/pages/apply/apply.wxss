@@ -1,0 +1,131 @@
+/* pages/shenqing/shenqing.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.blockk {
+  width: 700rpx;
+  height: 450rpx;
+  margin-left: 25rpx;
+  margin-top:15rpx;
+  margin-bottom: 15rpx;
+  display: flex;
+  flex-direction: column;
+  border: 5rpx solid;
+  border-radius: 3rpx;
+}
+.statee {
+margin-left: 450rpx;
+position:relative;
+}
+.list1{
+  width: 700rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+}
+.list1left{
+  width: 180rpx;
+  height: 200rpx;
+  margin-left: 25rpx;
+  border:5rpx solid#000;
+}
+.list1left image{
+  width: 100%;
+  height: 100%;
+}
+.list1right{
+  width: 500rpx;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+.cells{
+  background-color: white;  
+  width: 100%;
+  margin-bottom: 20rpx;
+  display: flex;
+}
+.cells image{
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 12rpx;
+  margin: 20rpx;
+}
+
+.name{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: black;
+}
+
+.tiaojian1{
+  font-size: 30rpx;
+  color: #07C160;
+  position: relative;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  margin-bottom: 150rpx;
+}
+
+.tiaojian2{
+  font-size: 30rpx;
+  color: #0085ff;
+  position: relative;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  margin-bottom: 100rpx;
+}
+
+.tiaojian3{
+  font-size: 30rpx;
+  color: #fa5151;
+  position: relative; 
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  margin-bottom: 150rpx;
+}
+
+.teamname{
+  margin-left: 10rpx;
+  margin-top:5rpx;
+}
+.applytime{
+  margin-left: 2rpx;
+  margin-top:5rpx;
+}
+.list2{
+height: 100rpx;
+width: 700rpx;
+display: flex;
+flex-direction: row;
+}
+.men{
+  display: flex;
+  flex-direction: row;
+  margin-left:25rpx;
+}
+
+.icon{
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.Candidate text{
+  height: 50rpx;
+  margin-left: 100rpx;
+}
+
+.block_des{
+  background-color: white;
+  width: 100%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.title{
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.content{
+  margin-left: 40rpx;
+}
