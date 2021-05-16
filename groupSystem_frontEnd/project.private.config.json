@@ -1,0 +1,77 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/myInfo/myInfo",
+          "pathName": "pages/myInfo/myInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/homepage/homepage",
+          "pathName": "pages/homepage/homepage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/memberInfoView/memberInfoView",
+          "pathName": "pages/memberInfoView/memberInfoView",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/teamInfo/teamInfo",
+          "pathName": "pages/teamInfo/teamInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addTeam/addTeam",
+          "pathName": "pages/addTeam/addTeam",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/apply/apply",
+          "pathName": "pages/apply/apply",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/allocateTask/allocateTask",
+          "pathName": "pages/allocateTask/allocateTask",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/editTeam/editTeam",
+          "pathName": "pages/editTeam/editTeam",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
