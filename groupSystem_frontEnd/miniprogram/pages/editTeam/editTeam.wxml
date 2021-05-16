@@ -1,0 +1,19 @@
+<!--pages/editTeam/editTeam.wxml-->
+<view class="myIcon">
+  <image src="{{team_photo}}" mode="aspectFit" bindtap="changeIcon"></image>
+</view>
+  <view class="name">
+    <text>Team Name</text>
+    <input placeholder="Enter name of team" value="{{team_name}}" bindinput="inputName"/>
+  </view>
+  <view class="TeamScope">
+    <view class="Title">
+      <text>Program Scope</text>
+    </view>
+    <view class="description">
+      <textarea  placeholder="Description here" maxlength="-1" value="{{WorkDes}}" bindconfirm="comfirmmm" bindinput="WorkExeInput"/>
+    </view>
+  </view>
+  <view class="submit">
+    <button plain="true" bindtap="submitHandler">Submit</button>
+  </view>

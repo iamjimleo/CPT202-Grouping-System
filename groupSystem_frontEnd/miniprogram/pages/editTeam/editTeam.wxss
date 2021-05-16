@@ -1,0 +1,50 @@
+.myIcon{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90rpx;
+}
+.myIcon image{
+  width: 350rpx;
+  height: 350rpx;
+}
+.name{
+  margin-top: 20rpx;
+  padding-top: 10rpx;
+  padding-left: 30rpx;
+  background-color: white;
+}
+.name input{
+  margin-right: 30rpx;
+  padding-left: 20rpx;
+  padding-bottom: 5rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.TeamScope{
+  margin-top: 20rpx;
+  background-color: white;
+}
+.Title {
+  padding-top: 15rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+}
+.description{
+  margin-left: 29rpx;
+  margin-right: 29rpx;
+  padding-bottom: 20rpx;
+}
+.description textarea{
+  margin-top: 10rpx;
+  width: 670rpx;
+  padding-left: 15rpx;
+  border:2rpx solid#000;
+}
+.submit button{
+  margin-top:20rpx;
+  background-color: white;
+}

@@ -1,0 +1,14 @@
+<!--pages/chooseLib/chooseLib.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item">
+      <text class="black">failed to initialize</text>
+    </view>
+    <view class="list-item">
+      <text class="request-text">Use a base library of 2.2.3 or above to use cloud capabilities</text>
+    </view>
+  </view>
+
+</view>
+

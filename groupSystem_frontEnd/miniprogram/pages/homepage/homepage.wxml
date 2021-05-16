@@ -1,0 +1,82 @@
+<!-- 下拉菜单   -->
+<view id="swiper-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="tabNav">{{fours}}
+        <i></i>
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="100" class="swiper-item" style='display:{{displays}}'>
+      <swiper-item>
+      </swiper-item>
+      <swiper-item>
+      </swiper-item>
+      <swiper-item>
+        
+      </swiper-item>
+      <swiper-item class="shaixuankuang">
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">program</span>
+          <block wx:for="{{array}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="choseTxtColor" style="{{index == one?' border:1rpx solid #07c160; color: #07c160':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">skill</span>
+          <block wx:for="{{chaoxiang}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="chaoxiang" style="{{index == two?'border:1rpx solid #07c160; color: #07c160':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+ 
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">position</span>
+          <block wx:for="{{louceng}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="louceng" style="{{index == third?'border:1rpx solid #07c160; color: #07c160':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+          <view class="confirm">
+            <button type="primary" plain="true" size="{{warnSize}}" bindtap="getCode">confirm</button>
+          </view>
+        
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>
+<swiper class="slides" indicator-dots indicator-color= "rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3000" circular>
+    <swiper-item >
+      <image src="../../images/1.jpg" bindtap="navigateToSW"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/2.jpg"></image>
+    </swiper-item>
+</swiper>
+<!-- BindConfirm is the event that is bound by clicking the Finish button on the input keyboard (Enter on the computer) -->
+
+<!-- The block has no real meaning, it's just a parenthesis -->
+<block class="teamInfo">
+  <!-- <scroll-view class="teamInfo" scroll-y scroll-top="{{topNum}}" bindscroll="scrolltoupper"></scroll-view> -->
+    
+    <view class="cells" wx:if="{{team.length}}" >
+      <navigator class="team" url="/pages/teamInfo/teamInfo?teamName={{item.name}}&skill={{item.skill}}&leader_name={{item.leader_name}}&team_id={{item.team_id}}" wx:for="{{team}}" wx:key="team_id">
+        <image src="{{item.image_url}}" mode="aspectFill"></image>
+        <view class="detail" >
+          <text class="name">{{item.name}}\n</text>
+          <text class="leaderName">Leader: {{item.leader_name}}\n</text>
+          <text class="tag">Skill: {{item.skill}}\n</text>
+          <text class="tag">Scope: {{item.scope}}</text>
+        </view>
+      </navigator>      
+    </view>
+    <view wx:else class="noTeam">
+      <text class="opps1">OPPS !\n</text>
+      <text class="opps2"> No team now !\n</text>
+    </view>
+  <!-- </scroll-view>  -->
+  <image src='../../images/goTop.png' class='goTop' hidden='{{!floorstatus}}' catchtap="goTop"></image>
+</block>
+
