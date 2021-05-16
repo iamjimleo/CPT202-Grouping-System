@@ -1,0 +1,23 @@
+<view class="form">
+  <view class="row-group">
+    <text>mail address</text>
+    <input placeholder="enter mail address" placeholder-class='txt'value="{{userMailAddress}}" bindinput="bindUserMailAddress" />
+  </view>
+   <view class="row-group">
+    <text>checkcode</text>
+    <input placeholder="enter checkcode" placeholder-class='txt' maxlength='6' value="{{checkCode}}" bindinput="bindCheckCode" />
+    <button class='code' disabled='{{disabled}}' bindtap="getcode">{{time}}</button>
+    
+  </view>
+  <view class="row-group">
+    <text>password</text>
+    <input placeholder="enter password" placeholder-class='txt'value="{{pwd}}" bindinput="bindPassword" />
+  </view>
+  <!-- <view class="row-group">
+    <text>confirm password</text>
+    <input placeholder="password again" placeholder-class='txt'value="{{pwd1}}" bindinput="bindConfirmPassword" />
+  </view> -->
+  <view>
+    <button class="submit"  type="primary" open-type="getUserInfo" bindgetuserinfo="login">Login</button>
+  </view>
+</view>
