@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/homepage/homepage",
+    "pages/teamInfo/teamInfo",
+    "pages/addTeam/addTeam",
+    "pages/select2/select2",
+    "pages/member/member",
+    "pages/my/my",
+    "pages/shenqing/shenqing",
+    
+    "pages/myInfo/myInfo",
+    "pages/setting/setting",
+    "pages/tellUs/tellUs",
+    "pages/swInfo/swInfo",
+    "pages/applySuccess/applySuccess",
+    "pages/noTeam/noTeam",
+    "pages/myInfoView/myInfoView",
+    "pages/memberInfoView/memberInfoView",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/allocateTask/allocateTask",
+    "pages/apply/apply",
+    "pages/applyDetail/applyDetail",
+    "pages/editTeam/editTeam"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "debug": true,
+  "tabBar": {
+    "color": "#73747c",
+    "backgroundColor": "#f0f0f0",
+    "borderStyle": "white",
+    "list": [
+      { "text": "Home",
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-h.png"
+      },
+      { "text": "add",
+        "pagePath": "pages/addTeam/addTeam",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add-h.png"
+      },
+      { "text": "My",
+        "pagePath": "pages/my/my",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-h.png"
+      }
+    ]
+  }
+}
