@@ -1,0 +1,92 @@
+<view class="myIcon">
+  <image src="{{photo_id}}" mode="aspectFit" bindtap="changeIcon"></image>
+</view>
+<view class="NameAndMajor">
+  <view class="name">
+    <text>Name</text>
+    <input placeholder="Enter your name" value="{{name}}" bindinput="inputName"/>
+  </view>
+  <view class="major" >
+    <text>Major</text>
+    <Select prop-array="{{selectArray}}" bind:select='bindSelectMajor'></Select>
+  </view>
+</view>
+<view class="otherInfo"> 
+  <!-- mail and phone -->
+  <view class="email">
+    <text>Email</text>
+    <input placeholder="Enter the mail address" value="{{userMail}}" bindinput="inputEmail"/>
+  </view>
+  <view class="PhoneNo.">
+    <text>Phone No.</text>
+    <input placeholder="Enter phone number" maxlength="11" value="{{phone}}" bindinput="inputPhone"/>
+  </view>
+  
+</view>
+<view class="otherInfo1">
+  <!-- skills and position -->
+  <view class="skillTitle">Skills
+    <view class="onShow0" bindtap='skillSelected'>
+      <view class="skillSelected">: {{skillSelect}} </view>
+    </view>
+    <view class="skillOptions" wx:if="{{shows0}}">
+      <checkbox-group bindchange="selectSkillsChange" disabled="{{canUse}}">
+        <label class="Skill" wx:for="{{skill}}" wx:for-item="skillForSelect">
+          <checkbox class="checkbox-Skill" value="{{skillForSelect}}">{{skillForSelect}}</checkbox>
+        </label>
+      </checkbox-group>
+      <button  bindtap="setSkills">done!</button>
+    </view>
+  </view>
+  <view class="positionTitle">Positions
+    <view class="onShow1" bindtap='positionSelected'>
+      <view class="positionSelected" >: {{positionSelect}} </view>
+    </view>
+    <view class="positionOptions" wx:if="{{shows1}}">
+      <checkbox-group bindchange="selectPositionChange">
+        <label class="Position" wx:for="{{position}}" wx:for-item="positionForSelect">
+          <checkbox class="checkbox-Position" value="{{positionForSelect}}">{{positionForSelect}}</checkbox>
+        </label>
+      </checkbox-group>
+      <button  bindtap="setPositions">done!</button>
+    </view>
+  </view>
+  <view class="programTitle">Programs
+    <view class="onShow2" bindtap='programSelected'>
+      <view class="programSelected">: {{programSelect}} </view>
+    </view>
+    <view class="programOptions" wx:if="{{shows2}}">
+      <checkbox-group bindchange="selectProgramsChange">
+        <label class="Program" wx:for="{{program}}" wx:for-item="ProgramForSelect">
+          <checkbox class="checkbox-Program" value="{{ProgramForSelect}}">{{ProgramForSelect}}</checkbox>
+        </label>
+      </checkbox-group>
+      <button  bindtap="setPrograms">done!</button>
+    </view>
+  </view>
+  
+</view>
+
+<view class="workExe">
+  <view class="Title">
+    <text>Work Experience</text>
+  </view>
+  <view class="description">
+  <text>Description</text>
+    <textarea  placeholder="Description here" maxlength="-1" value="{{WorkDes}}" bindconfirm="comfirmmm" bindinput="WorkExeInput"/>
+  </view>
+  <view class="Title">
+    <text>Award Experience</text>
+  </view>
+  <view class="description">
+  <text>Description</text>
+    <textarea  placeholder="Description here" maxlength="-1" value="{{AwardDes}}" bindinput="AwardExeInput"/>
+  </view>
+  
+  <view class = "addexp">
+  <image src="../../images/add-circle.png"></image>
+  <view class="addline"></view>
+  </view>
+  <button class="submit" bindtap="login">Submit</button>
+
+</view>

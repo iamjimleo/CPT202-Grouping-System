@@ -1,0 +1,42 @@
+<view class="basicInfo">
+  <image src="{{photo_url}}" mode="aspectFill"></image>
+  <view class="detail" >
+    <text class="TeamName">Name: {{name}}\n</text>
+    <text class="leaderName">Major: {{major}}\n</text>
+    
+    <text class="skill">Phone Number: {{phone}}\n</text>
+    
+    <view class="phone">
+      <text class="program">E-mail:\n {{email}}\n</text>
+    </view>
+  </view>
+</view>
+
+<view class="descrip">
+  <view class="description">
+    <text class="title">Skill:\n</text>
+    <text class="content">{{skill}}\n</text>
+
+    <text class="title">Position Reference:\n</text>
+    <text class="content">{{position}}\n</text>
+
+    <text class="title">Program Reference:\n</text>
+    <text class="content">{{program}}\n</text>
+    
+    <text class="title">Working Experience: \n</text>
+    <text class="content">{{experience_description}}\n</text>
+    <text class="title">Award Description: \n</text>
+    <text class="content">{{award_description}}</text>
+  </view>
+</view>
+
+<view wx:if="{{state==0}}">
+  <button type="primary" plain="true" class="button" bindtap="remove">Remove</button>
+</view>
+
+<view wx:if="{{state==2&&isHost==1}}">
+  <button type="primary" plain="true" class="button" bindtap="remove">Quit</button>
+</view>
+
+
+

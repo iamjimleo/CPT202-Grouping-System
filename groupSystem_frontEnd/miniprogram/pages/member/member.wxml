@@ -1,0 +1,22 @@
+<!--pages/member/member.wxml-->
+<view class ="title">
+<text> this is the member{{mbidd}}</text>
+</view>
+
+<view class = "skill">
+  <text>skill</text>
+  <picker mode="multiSelector" range="{{skillnamee}}" bindchange="skillchangee">
+    <view> is about: {{skillchoicee}}</view>
+  </picker>
+</view>
+
+<view class = "position">
+  <text>position</text>
+  <picker mode="selector" range="{{poss}}" bindchange="poschangee">
+    <view> is about: {{poschoicee}}</view>
+  </picker>
+</view>
+
+<view class="buttonn">
+<button bindtap = "complete">complete</button>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/my/my.wxml-->
+<view class="myBasicInfo">
+  <view class="infoPart1">
+    <image src="{{photo_url}}" mode="aspectFill"></image>
+    <text class="name">{{name}}</text>
+  </view>
+  <!-- <view class="infoPart2">
+    <text>E-mail\n{{email}}</text>
+    <text>Major\n{{major}}</text>
+    <text>Team\n{{TheNine}}</text>
+  </view> -->
+</view>
+
+<view class="menu">
+  <navigator class="item" url="/pages/apply/apply">
+    <image src="../../images/notification.png" mode="aspectFill"></image>
+    <text>Notification</text>
+    <image src="../../images/arrow-right.png" mode="aspectFill"></image>
+  </navigator>
+  
+  
+    <view class="item" bindtap="navToMyTeam">
+      <image src="../../images/group.png" mode="aspectFill"></image>
+      <text>My Team</text>
+      <image src="../../images/arrow-right.png" mode="aspectFill"></image>
+    </view>
+  
+  <navigator class="item" url="/pages/myInfoView/myInfoView">
+    <image src="../../images/MyInfo.png" mode="aspectFill"></image>
+    <text>My Personal Information</text>
+    <image src="../../images/arrow-right.png" mode="aspectFill"></image>
+  </navigator>
+  <navigator class="item" url="/pages/tellUs/tellUs">
+    <image src="../../images/tellus.png" mode="aspectFill"></image>
+    <text>Tell us</text>
+    <image src="../../images/arrow-right.png" mode="aspectFill"></image>
+  </navigator>
+  <navigator class="item" url="/pages/setting/setting">
+    <image src="../../images/setting.png" mode="aspectFill"></image>
+    <text>Setting</text>
+    <image src="../../images/arrow-right.png" mode="aspectFill"></image>
+  </navigator>
+</view>
+
+

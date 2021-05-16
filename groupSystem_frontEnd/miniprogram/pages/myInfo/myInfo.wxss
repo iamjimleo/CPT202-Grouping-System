@@ -1,0 +1,153 @@
+Page{
+  background-color: #f0f0f0;
+}
+.myIcon{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90rpx;
+}
+.myIcon image{
+  width: 350rpx;
+  height: 350rpx;
+}
+.NameAndMajor{
+  background-color: white;
+  display: flex;
+}
+.NameAndMajor text{
+  margin-left: 30rpx;
+}
+.name input{
+  width: 365rpx;
+  padding-left: 20rpx;
+  padding-bottom: 5rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.otherInfo{
+  padding-bottom: 2rpx;
+  margin-bottom: 20rpx;
+  background-color: white;
+}
+.otherInfo text{
+  margin-left: 30rpx;
+}
+.otherInfo input{
+  width: 690rpx;
+  padding-left: 20rpx;
+  padding-bottom: 5rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.otherInfo1{
+  padding-top: 15rpx;
+  padding-bottom: 5rpx;
+  background-color: white;
+}
+.otherInfo1 text{
+  margin-left: 30rpx;
+}
+.skillTitle {
+  margin-left: 30rpx;
+}
+.skillSelected {
+  border-bottom: 2rpx solid #ddd;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 75rpx 0 15rpx;
+}
+.positionTitle {
+  margin-left: 30rpx;
+}
+.positionSelected {
+  border-bottom: 2rpx solid #ddd;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 75rpx 0 15rpx;
+}
+.programTitle {
+  margin-left: 30rpx;
+}
+.programSelected {
+  border-bottom: 2rpx solid #ddd;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 75rpx 0 15rpx;
+}
+.program{
+  display: flexbox;
+}
+.workExe{
+  margin-top: 20rpx;
+  background-color: white;
+}
+.Title {
+  padding-top: 15rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+}
+.description{
+  margin-left: 29rpx;
+  margin-right: 29rpx;
+  padding-bottom: 10rpx;
+}
+.description textarea{
+  margin-top: 10rpx;
+  width:  690rpx;
+  border:2rpx solid#000;
+}
+.addexp{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction:row;
+  margin-top: 20rpx;
+}
+.addline{
+  width: 690rpx;
+  height: 0rpx;
+  border-bottom:2rpx solid#2c2c2c;
+  margin-top: 21rpx;
+}
+.addexp image{
+  height: 50rpx;
+  width: 50rpx;
+  margin-top: 0rpx;
+}
+.contactInfo text{
+  margin-left: 30rpx;
+}
+.contactInfo picker{
+  padding-left: 20rpx;
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+  margin-bottom: 20rpx;
+  border-bottom:2rpx solid#ddd;
+  width: 690rpx;  
+}
+.techInfo text{
+  margin-left: 30rpx;}
+.techInfo picker{
+  padding-left: 20rpx;
+  padding-bottom: 15rpx;
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+  margin-bottom: 20rpx;
+  border-bottom:2rpx solid#ddd;
+  width: 690rpx;
+}
